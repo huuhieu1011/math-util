@@ -32,7 +32,7 @@ public class MathUtility {
             //0! = 1! = 1
         }
         //den doan nay sure n tu 2..20
-        long result = 0;
+        long result = 1;
         for(long i = 2; i <= n; i++) {
             result = result * i;
         }
