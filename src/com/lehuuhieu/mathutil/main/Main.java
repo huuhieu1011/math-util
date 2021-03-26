@@ -25,6 +25,11 @@ public class Main {
         System.out.println("5! expected: " + expected + "; actual: " + actual);
         
         //xet truong hop 2: 0! bang may
+        n = 0; //0! coi bang may
+        expected = 1;
+        actual = MathUtility.getFactorial(n);
+        
+        System.out.println("0! expected: " + expected + "; actual " + actual);
     }
     
 }
