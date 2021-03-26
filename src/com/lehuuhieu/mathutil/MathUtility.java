@@ -23,6 +23,22 @@ public class MathUtility {
     //vi giai thuong tang cuc nhanh ve gia tri, 21! tran kieu long
     //ta se khống chết n dau vao cua ham tu 0..20
     //kieu long: 10^18, 18 con so 0 toi da
+//    public static long getFactorial(int n) {
+//        if(n < 0 || n > 20) {
+//            throw new IllegalArgumentException("Invalid argument. n must be between 0..20");
+//        }
+//        if(n == 0 || n == 1) {
+//            return 1;
+//            //0! = 1! = 1
+//        }
+//        //den doan nay sure n tu 2..20
+//        long result = 1;
+//        for(long i = 2; i <= n; i++) {
+//            result = result * i;
+//        }
+//        return result;
+//    }
+    
     public static long getFactorial(int n) {
         if(n < 0 || n > 20) {
             throw new IllegalArgumentException("Invalid argument. n must be between 0..20");
@@ -31,11 +47,7 @@ public class MathUtility {
             return 1;
             //0! = 1! = 1
         }
-        //den doan nay sure n tu 2..20
-        long result = 1;
-        for(long i = 2; i <= n; i++) {
-            result = result * i;
-        }
-        return result;
+        //minh thua biet n! = n * (n - 1)!
+        return n * getFactorial(n - 1);
     }
 }
