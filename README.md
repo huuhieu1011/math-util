@@ -12,6 +12,6 @@
 #### Connect me via:
 
 [My facebook](https://fb.com/lehuuhieu.1011)  
-[My email](mailto: lehuuhieuak@gmail.com)
+[My email](mailto:lehuuhieuak@gmail.com)
 
 © 2021 lehuuhieu
